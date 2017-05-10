@@ -65,7 +65,7 @@ public class LinkList {
 		// check for next nodes and remove them if greater than target
 		while(current.getNext()!=null){
 			// if next's data is greater than target then set current.next = current.next.next
-			// else traverse to next node
+			// else set current = current.next
 			if(current.getNext().getData()>target)
 				current.setNext(current.getNext().getNext());
 			else 
